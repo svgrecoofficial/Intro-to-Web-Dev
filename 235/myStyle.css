@@ -1,0 +1,41 @@
+:root 
+{
+background-color: rgb(214, 135, 70);
+}
+.images{
+  display:flex;
+  justify-content: center;
+}
+.boxes{
+  display: flex;
+  gap: 16px;
+}
+#description {
+  width: 40vw;
+  border: 35px solid rgb(235, 68, 68);
+  padding: 50px;
+  margin: 20px;
+}
+#links {
+  width: 40vw;
+  border: 35px solid rgb(235, 68, 68);
+  padding: 50px;
+  margin: 20px;
+}
+
+a:link {
+  color: rgb(212, 11, 4);
+}
+a:visited {
+  color: rgb(95, 9, 6);
+}
+a:hover {
+  color: rgb(211, 52, 4);
+}
+a:focus {
+  outline: 2px solid rgb(201, 95, 81);
+}
+a:active {
+  color: rgb(221, 13, 141);
+}
+
