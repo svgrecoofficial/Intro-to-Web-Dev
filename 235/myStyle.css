@@ -29,11 +29,11 @@ a:link {
 a:visited {
   color: rgb(95, 9, 6);
 }
-a:hover {
-  color: rgb(211, 52, 4);
-}
 a:focus {
   outline: 2px solid rgb(201, 95, 81);
+}
+a:hover {
+  color: rgb(211, 52, 4);
 }
 a:active {
   color: rgb(221, 13, 141);
