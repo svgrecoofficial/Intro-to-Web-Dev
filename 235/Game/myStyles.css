@@ -1,0 +1,47 @@
+
+body, input, button, select, textarea {
+  font-family: 'Arial', sans-serif;
+}
+h1{
+  font-family: 'Syne Tactile', cursive;
+}
+body,header,main
+{
+  background-color:#4b300f;
+}
+footer{
+  background-color: #bca56b;
+}
+h2
+{
+  color:blueviolet;
+}
+p
+{
+  margin-left: 100px;
+}
+main, header, footer{
+  border: 1px solid black;
+  margin: 0 auto;
+  width: 80vw;
+  padding: 2rem;
+}
+img.rightside {float:right; margin: 0 12px;}
+img.center {float:center; margin: 0 12px;}
+img.leftside {float:left; margin: 0 12px;}
+a:link {
+  color: rgb(212, 11, 4);
+}
+a:visited {
+  color: rgb(95, 9, 6);
+}
+a:focus {
+  outline: 2px solid rgb(201, 95, 81);
+}
+a:hover {
+  color: rgb(211, 52, 4);
+}
+a:active {
+  color: rgb(221, 13, 141);
+}
+
