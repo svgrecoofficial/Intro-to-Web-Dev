@@ -2,6 +2,8 @@ html{
     margin:1%;
     margin-left: 22%;
     margin-right: 22%;
+    color: #471d14;
+    background-color: cornflowerblue;
 }
 hr{
     margin:0.3%;
@@ -10,8 +12,6 @@ h1{
     margin:0;
     text-align: center;
     font-size: 100px;
-    background-color: beige;
-    color: #471d14;
 }
 .title_img{
     display: block;
@@ -24,11 +24,9 @@ h2{
     margin-top:2%;
     text-align: center;
     font-size: 37px;
-    background-color: beige;
-    color: #471d14;
 }
 body{
-    background-color: cornflowerblue;
+    background-color: beige;
     
 }
 #topside_text{
@@ -36,14 +34,11 @@ body{
     display: grid;
     margin-bottom: -2%;
     grid-template-columns: 40% 38% 36%;
-    background-color: beige;
-    color: #471d14;
 }
 
 .container {
   display: flex;
-
-    background-color: beige;
+  margin-top: -5%;
 }
 
 .container div {
@@ -59,3 +54,37 @@ body{
     padding-top: 8%;
 }
 
+.container2 {
+  display: flex;
+}
+.container2 p{
+    font-size: 20px;
+}
+
+.texts{
+    flex-basis: 60%;
+    grid-column: span 2;
+}
+
+.secondary_img{
+    margin-top: -2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    flex-basis: 40%;
+}
+
+.grid{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: 8% 40% 40%;
+    column-gap: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.grid img{
+    margin: 10%;
+    width: 80%;
+    height: auto;
+}
