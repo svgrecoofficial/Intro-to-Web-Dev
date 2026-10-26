@@ -2,6 +2,22 @@ html{
     color: #471d14;
     background-color: cornflowerblue;
 }
+
+a:link {
+    color: #471d14;
+ } 
+a:visited{
+    color:rgb(36, 2, 39);
+}
+a:focus{
+}
+a:hover{
+    color: rgb(95, 53, 13);
+}
+a:active{
+    color:rgb(11, 62, 92);
+}
+
 @media screen and (max-width: 1200px){
     .container {
         font-size: 1em;
@@ -50,7 +66,7 @@ html{
     padding-left: 3%;
     padding-right: 3%;
     padding-top: 0;
-    font-size: 20px;
+    font-size: clamp(0.5rem, 1.3vw, 2rem);
     width: 100%;
     }
      
@@ -72,8 +88,12 @@ html{
     margin-bottom: -8vh;
     }
 
+    .grid div p{
+        font-size: clamp(0.7rem, 1.1vw, 1.3rem);
+    }
+
     .grid img{
-        width: 85%;
+        width: 95%;
         height: auto;
     }
 
@@ -82,6 +102,10 @@ html{
     margin-left: 2%;
     margin-right: 2%;
     flex-basis: 40%;
+    }
+
+    .secondary_img p{
+        font-size: clamp(0.5rem, 1.5vw, 2rem);
     }
 }
 
