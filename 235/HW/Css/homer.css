@@ -1,0 +1,36 @@
+html{
+    background-color: rgb(79, 79, 177);
+}
+
+header{
+    background-color: rgba(79, 79, 177, 0.598);
+    width: 60vw;
+    position: absolute;
+    left: auto;
+    top: 18vh;
+}
+
+h1{
+    font-weight: bold;
+}
+
+#wrapper img{
+    width: 60vw;
+    position: absolute;
+    left: auto;
+    top:15vh;
+    z-index: -99;
+}
+
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.rubik-spray-paint-regular {
+  font-family: "Rubik Spray Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
