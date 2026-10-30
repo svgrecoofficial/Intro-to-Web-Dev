@@ -1,0 +1,7 @@
+#true_header{
+    width: 100vw;
+    margin-left: -0.5vw ;
+    background-color: rgba(5, 91, 128, 0.607);
+    display: flex;
+    align-items: center;
+}
