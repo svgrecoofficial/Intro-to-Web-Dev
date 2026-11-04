@@ -2,16 +2,71 @@ html{
     background-color: rgb(79, 79, 177);
 }
 
+
+@media screen and (max-width: 1200px){
 header{
+    background-color: rgba(79, 79, 177, 0.598);
+    width: 100vw;
+    position: absolute;
+    left: auto;
+    font-size: clamp(0.1rem, 0.7vw, 1rem);
+    top: 18vh;
+}
+#wrapper img{
+    width: 100vw;
+    position: absolute;
+    left: auto;
+    top:15vh;
+    z-index: -99;
+}
+#button{
+    position: relative;
+    left: auto;
+    top: calc(15vh + (100vw * 0.75 * 0.5625));
+    font-size: clamp(0.1rem, 1.7vw, 1rem);
+    background-color: yellow;
+    border: 5px solid yellow;
+    border-radius: 20px;
+    transition-duration: 0.1s;
+}
+
+#button:hover{
+    top: calc(15vh + (99vw * 0.75 * 0.5625));
+    border: 8px solid yellow;
+}
+#button:active{
+    background-color: rgb(105, 105, 32);
+    border: 8px solid rgb(105, 105, 32);
+}
+
+h3{
+    background-color: rgba(240, 248, 255, 0.712);
+    font-size: clamp(0.1rem, 1.7vw, 1rem);
+    width: 30vw;
+    position: absolute;
+    left: 66%;
+    top: 24vh;
+}
+
+}
+@media screen and (min-width: 1201px){
+
+h3{
+    background-color: rgba(240, 248, 255, 0.712);
+    font-size: clamp(0.1rem, 1.7vw, 1rem);
+    width: 15vw;
+    position: absolute;
+    left: 63%;
+    top: 30vh;
+}
+
+    header{
     background-color: rgba(79, 79, 177, 0.598);
     width: 60vw;
     position: absolute;
     left: auto;
+    font-size: clamp(0.1rem, 0.7vw, 1rem);
     top: 18vh;
-}
-
-h1{
-    font-weight: bold;
 }
 
 #wrapper img{
@@ -21,16 +76,41 @@ h1{
     top:15vh;
     z-index: -99;
 }
+#button{
+    position: absolute;
+    left: auto;
+    top: calc(15vh + (60vw * 0.75 * 0.5625));
+    font-size: clamp(0.1rem, 0.7vw, 1rem);
+    background-color: yellow;
+    border: 5px solid yellow;
+    border-radius: 20px;
+    transition-duration: 0.1s;
+}
+#button:hover{
+    top: calc(15vh + (59.5vw * 0.75 * 0.5625));
+    border: 8px solid yellow;
+}
+#button:active{
+    background-color: rgb(105, 105, 32);
+    border: 8px solid rgb(105, 105, 32);
+}
+}
+
+
+h1{
+    font-weight: bold;
+}
 
 #wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
 }
 
 .rubik-spray-paint-regular {
   font-family: "Rubik Spray Paint", system-ui;
-  font-weight: 400;
+  font-weight: 1;
   font-style: normal;
 }
