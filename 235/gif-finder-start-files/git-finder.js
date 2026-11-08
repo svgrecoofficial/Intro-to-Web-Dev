@@ -8,7 +8,7 @@ window.onload = (e) => {document.querySelector("#search").onclick = searchButton
 		console.log("searchButtonClicked() called");
 		const GIPHY_URL = "https://api.giphy.com/v1/gifs/search?";
 
-        let GIPHY_KEY = "5PuWjWVnwpHUQPZK866vd7wQ2qeCeqg7";
+        let GIPHY_KEY = "uhV0AqO544WLbGm10RDgjTElXQW68iBG";
 
         let url = GIPHY_URL;
         url += "api_key=" + GIPHY_KEY;
@@ -59,7 +59,7 @@ window.onload = (e) => {document.querySelector("#search").onclick = searchButton
 
         let results = obj.data;
         console.log("results.length = " + results.length);
-        let bigString = "<p><i>Here are " + results.length + " results for '" + displayTerm + "'</i></p>";
+        let bigString = ""; 
 
         for(let i=0;i<results.length;i++){
             let result = results[i];
@@ -69,14 +69,14 @@ window.onload = (e) => {document.querySelector("#search").onclick = searchButton
 
             let url = result.url;
 
-            let line = `<div class='result'><img src = '${smallURL}' title = '${result.id}' />`;
-            line += `<span><a target='_blank' href='${url}'>View on Giphy</a><br>Rating = ` + '${result.rating}'`</span></div>`;
+            let line = `<div class="result"><img src = "${smallURL}" title = "${result.id}" />`;
+            line += `<span><a target="_blank" href="${url}">View on Giphy</a><br>Rating = ${result.rating.toUpperCase()}</span></div>`;
 
             bigString += line;
 
             document.querySelector("#content").innerHTML = bigString;
 
-            document.querySelector("#status").innerHTML = "<b>Success!</b>";
+            document.querySelector("#status").innerHTML = "<b>Success!</b>" + "       <i>Here are " + results.length + " results for '" + displayTerm + "'</i>";
         }
     }
 
