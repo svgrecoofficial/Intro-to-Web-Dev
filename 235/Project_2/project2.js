@@ -28,7 +28,7 @@ function dataLoadedRandom(e){
     let obj = JSON.parse(xhr.responseText);
     let info = obj.info;
     let totalAmt = info.count;
-    let randomChar = Math.floor(Math.random() * totalAmt);
+    let randomChar = Math.floor(Math.random() * totalAmt) + 1;
     getActualRandomCharacter(xhr.responseURL + "/" + randomChar)
 }
 
@@ -40,12 +40,12 @@ function dataActuallyLoadedRandom(e){
     let smallURL = result.image;
     let url = result.url;
     let bigString = "";
-    let line = `<p><b>${result.name}</b></p>` + `<div class="result"><img src = "${smallURL}" title = "${result.name}" />`;
+    let line = `<p><b>${result.name}</b></p>` + `<div class="result"><img src = "${smallURL}" title = "${result.name}" /></div>`;
     bigString += line;
 
     document.querySelector("#content").innerHTML = bigString;
 
-    document.querySelector("#status").innerHTML = "<b>Success!</b>" + "       <i>Here is your random character!";
+    document.querySelector("#status").innerHTML = "<b>Success!</b>" + "       <i>Here is your random character!</i>";
 
 }
 
@@ -114,7 +114,7 @@ function searchButtonClicked(){
 
             let url = result.url;
 
-            let line = `<p><b>${result.name}</b></p>` + `<div class="result"><img src = "${smallURL}" title = "${result.name}" />`;
+            let line = `<div class="result"><p><b>${result.name}</b></p><img src = "${smallURL}" title = "${result.name}" /></div>`;
 
             bigString += line;
 

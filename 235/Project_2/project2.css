@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
+.result {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.result img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 1080px) {
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    .result {
+        background-color: aqua;
+    }
+}
