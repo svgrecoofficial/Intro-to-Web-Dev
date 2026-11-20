@@ -1,4 +1,9 @@
-window.onload = (e) => {document.querySelector("#search").onclick = searchButtonClicked; document.querySelector("#random").onclick = randomButtonClicked};
+window.onload = (e) => {
+    document.querySelector("#search").onclick = searchButtonClicked;
+    document.querySelector("#random").onclick = randomButtonClicked;
+    randomButtonClicked();
+    searchButtonClicked();
+};
 let displayTerm = "";
 function randomButtonClicked(){
     console.log("randomButtonClicked() called");
@@ -43,9 +48,9 @@ function dataActuallyLoadedRandom(e){
     let line = `<p><b>${result.name}</b></p>` + `<div class="result"><img src = "${smallURL}" title = "${result.name}" /></div>`;
     bigString += line;
 
-    document.querySelector("#content").innerHTML = bigString;
+    document.querySelector("#randomSearch").innerHTML = bigString;
 
-    document.querySelector("#status").innerHTML = "<b>Success!</b>" + "       <i>Here is your random character!</i>";
+    document.querySelector("#status").innerHTML = "<b>Success!</b>" + "       <b>Here is your random character!</b>";
 
 }
 
@@ -120,7 +125,7 @@ function searchButtonClicked(){
 
             document.querySelector("#content").innerHTML = bigString;
 
-            document.querySelector("#status").innerHTML = "<b>Success!</b>" + "       <i>Here are " + returnAmount + " results for '" + displayTerm + "'</i>";
+            document.querySelector("#status").innerHTML = "<b>Success!</b>" + "       <b>Here are " + returnAmount + " results for '" + displayTerm + "'</b>";
         }
     }
 

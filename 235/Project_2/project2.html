@@ -7,38 +7,47 @@
 	<script src="project2.js"></script>
 </head>
 <body>
-<header>
-	<h1>Rick and Morty Character Finder</h1>
-</header>
+<div id = "sidePadding">
+	<div class = "side">
+		<header>
+			<h1>Rick and Morty Character Finder</h1>
+		</header>
+		<br>
 
-<div class="widgets">
-	Character Search -> 
-	<input id="searchterm" type="text" size="20" maxlength="20" autofocus value="rick" />
+		<div class="widgets">
+			Character Search -> 
+			<input id="searchterm" type="text" size="20" maxlength="20" autofocus value="rick" />
+		</div>
+		<br>
+
+		<div class="widgets">
+			Max # results -> 
+			<select id="limit">
+				<option value="5">5</option>
+				<option value="10" selected>10</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+			</select>
+		</div>
+		<br>
+
+		
+			<button type="button" id="search" >Rick and Morty Characters!<br>Search Now!</button>
+			<button type="button" id="random" >Unsure who to search?<br>Get a Random Character!</button>
+	
+		<br>
+		<div id="status">Ready to Search!</div>
+	</div>
+	<div class = "side">
+		<div id = "randomSearch"></div>
+	</div>
 </div>
-
-<div class="widgets">
-	Max # results -> 
-	<select id="limit">
-		<option value="5">5</option>
-		<option value="10" selected>10</option>
-		<option value="15">15</option>
-		<option value="20">20</option>
-	</select>
-</div>
-
-<div class="widgets">
-	<button type="button" id="search" >Rick and Morty Characters!<br>Search Now!</button>
-    <button type="button" id="random" >Unsure who to search?<br>Get a Random Character!</button>
-</div><hr>
 <div id="wrapper">
-<div id="status">Ready to Search!</div>
-
-
-<h2>Results</h2>
-<div id="content">
-	<p>No data yet!</p>
-</div>
- 
+		
+	<h2>Results</h2>
+	<div id="content">
+		<p>No data yet!</p>
+	</div>
 </div>
 </body>
 </html>

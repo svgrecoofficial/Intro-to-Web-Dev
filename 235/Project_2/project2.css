@@ -1,8 +1,4 @@
-body {
-    background-color: black;
-    color: white;
-    font-family: sans-serif;
-}
+
 
 #content {
     display: grid;
@@ -24,17 +20,71 @@ body {
     border-radius: 4px;
 }
 
-@media screen and (max-width: 1080px) {
+
     body {
-        background-color: white;
+        background-color: rgb(10, 53, 42);
         color: black;
     }
 
-    #content{
-        background-color: blueviolet;
+    #wrapper{
+        background-color: rgb(60, 160, 160);
     }
 
     .result {
-        background-color: rgb(47, 88, 88);
+        background-color: rgb(109, 65, 122);
     }
-}
+
+    #sidePadding{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:16px;
+    }
+
+    .side{
+        background-color: rgb(60, 160, 160);
+    }
+
+    #randomSearch{
+        font-size: x-large;
+    }
+    #randomSearch img{
+        width: 50%;
+    }
+
+    #status, .side,h2{
+        text-align: center;
+    }
+
+    button{
+        
+        font-weight: bold;
+        border-radius: 30%;
+        border: #10a30a, 15px, solid;
+        background-color: #6be966;
+    }
+
+    button:hover{
+        border-radius: 30%;
+        border: #0f8f0a, 15px, solid;
+        background-color: #4fad4c;
+    }
+    
+    button:active{
+        box-shadow : 0 0 6px rgba(0,0,0,.6);
+    }
+
+    .widgets{
+        font-weight: bold;
+        border-radius: 30%;
+        border: #10a30a, 15px, solid;
+        background-color: #6be966;
+    }
+
+    #searchterm{
+        font-weight: bold;
+        background-color: #46a842;
+    }
+    #limit{
+        font-weight: bold;
+        background-color: #46a842;
+    }
