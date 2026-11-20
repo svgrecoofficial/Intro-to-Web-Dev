@@ -30,7 +30,11 @@ body {
         color: black;
     }
 
+    #content{
+        background-color: blueviolet;
+    }
+
     .result {
-        background-color: aqua;
+        background-color: rgb(47, 88, 88);
     }
 }
